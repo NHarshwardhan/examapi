@@ -8,8 +8,8 @@ const questionSchema = new mongoose.Schema({
     email: String,
     password: String,
     role: String,
-    examkey: String,
-    examname: String
+    examkey: [String],
+    examname: [String]
 
 });
 
