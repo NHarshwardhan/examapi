@@ -17,7 +17,8 @@ const ApprovedStudent = mongoose.model("approvedstudent", questionSchema);
 
 router.post("/", (req, res) => {
 
-    const newStudent = new ApprovedStudent({      
+    const newStudent = new ApprovedStudent({   
+         _id: req.body._id,
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
